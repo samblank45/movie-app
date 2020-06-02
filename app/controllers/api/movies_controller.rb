@@ -9,4 +9,5 @@ class Api::MoviesController < ApplicationController
     @movie = Movie.find_by(id:3)
     render 'get_movie.json.jb'
   end
+
 end
