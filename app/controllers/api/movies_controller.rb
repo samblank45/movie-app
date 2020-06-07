@@ -18,8 +18,11 @@ def create
     director: params[:director],
     english: params[:english]
   )
-  @movie.save
-  render 'show.json.jb'
+  if @movie.save
+    render 'show.json.jb'
+  else  
+    render json: {error: @movie.errors.full_messages}
+  end
 end
 
 def update
@@ -30,7 +33,11 @@ def update
   @movie.director = params[:director] || @movie.director
   @movie.english = params[:english] || @movie.director
   @movie.save
-  render 'show.json.jb'
+  if @movie.save
+    render 'show.json.jb'
+  else  
+    render json: {error: @movie.errors.full_messages}
+  end
 end
 
 def destroy
