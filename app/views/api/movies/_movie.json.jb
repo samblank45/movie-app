@@ -6,4 +6,4 @@
   director: movie.director,
   englsh: movie.english,
   genres: movie.genre_names
-}
+} 
