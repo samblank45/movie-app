@@ -11,7 +11,7 @@ class Api::MoviesController < ApplicationController
   end
 
   def show
-    @movie = Movie.find_by(id: params[:id])
+    @movie = Movie.find(params[:id])
     render 'show.json.jb'
   end
 
