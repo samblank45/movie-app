@@ -1,0 +1,17 @@
+body {
+  background-color: beige;
+}
+
+.jumbotron {
+  background-image: url("https://cdn0.wideopenpets.com/wp-content/uploads/2019/10/Fish-Names-770x405.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75em;
+  font-family: fantasy;
+  font-style: italic;
+  color: red;
+}
+
+.card {
+  background-color: slategray;
+}
